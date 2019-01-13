@@ -1,30 +1,44 @@
 ﻿WebShell-Collections
 ========
-这是一个webshell收集项目
+# PHP-backdoors
+A collection of PHP backdoors. For educational and/or testing purposes only.
 
-送人玫瑰，手有余香，如果各位下载了本项目，也请您能提交shell
 
-本项目涵盖各种常用脚本
+### Notes
+* The [deobfuscated folder](Deobfuscated) does not necessarily contain deobfuscated versions of the backdoors you can find in the [obfuscated folder](Obfuscated). To deobfuscate those and other tricks, Check out the [PHP tools](PHP%20tools.md) section.
+* Always investigate malware in a secure environment. This means: separately from your network and in a virtual machine!
+* Some backdoors may be backdoored *(yes, really)*. Don't ever use this for any malicious purposes.
+* The backdoors follow the format: *Backdoorname_SHA1.php*, granted the name of the backdoor is known.
 
-如：asp,aspx,php,jsp,pl,py
+### PHP tools
+This includes links to tools for the following:
+* Deobfuscators (online and offline)
+* Beautifiers (online and offline)
+* Testers (running the code - do this in a secure environment!)
 
-如提交各种webshell，请勿更改名称和密码
+Access the links to these tools directly from [here](PHP%20tools.md).
 
-注意：所有shell 本人不保证是否有后门，但是自己上传的绝不会故意加后门
 
-各位提交的，也请勿加后门
+#### Other repos
+* [webshell](https://github.com/tennc/webshell) - *This is a webshell open source project.*
+* [php-exploit-scripts](https://github.com/mattiasgeniar/php-exploit-scripts/) - *A collection of PHP exploit scripts, found when investigating hacked servers.*
+* [php-webshells](https://github.com/JohnTroony/php-webshells) - *Common php webshells.*
+* [WebShell](https://github.com/tdifg/WebShell) - *WebShell Collect.*
+* [webshellSample](https://github.com/tanjiti/webshellSample) - *Webshell sample for WebShell Log Analysis.*
 
-如发现存在后门代码，请issues 。
 
-本项目提供的工具，禁止从事非法活动，此项目，仅供测试，所造成的一切后果，与本人无关。
+#### Other information
+Read my blog post on '[C99Shell not dead](https://bartblaze.blogspot.com/2015/03/c99shell-not-dead.html)' for more information about PHP backdoors (and in particular *c99Shell*, which you can also find in this repository). You can also follow me on [Twitter](https://twitter.com/bartblaze).
 
-Author ：tennc
 
-http://tennc.github.io/webshell
+#### Detection
+If you're trying to detect webshells like the ones mentioned in this repository, you may want to use [Yara](https://github.com/VirusTotal/yara) and scan your web server with the following Yara rules specifically for webshells:
+[Yara-rules/Webshells](https://github.com/Yara-Rules/rules/tree/master/Webshells)
 
-license : GPL v3
+Alternatively, have a look at the [disinfection tips](https://bartblaze.blogspot.com/2015/03/c99shell-not-dead.html#disinfection) provided in my blog post.
 
-## Download link
-Check github releases. Latest:
+# License
+[![License](http://i.imgur.com/9811oXC.png?2)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-[https://github.com/tennc/webshell/releases](https://github.com/tennc/webshell/releases)
+To the extent possible under law, [bartblaze](https://github.com/bartblaze) has waived all copyright and related or neighboring rights to this work. He makes no warranties about the work, and disclaims liability for all uses of the work.
+
