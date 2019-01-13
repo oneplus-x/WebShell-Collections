@@ -1,4 +1,4 @@
-﻿webshell
+﻿WebShell-Collections
 ========
 这是一个webshell收集项目
 
@@ -28,4 +28,3 @@ license : GPL v3
 Check github releases. Latest:
 
 [https://github.com/tennc/webshell/releases](https://github.com/tennc/webshell/releases)
-# WebShell-Collections
